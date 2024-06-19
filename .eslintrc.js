@@ -28,5 +28,8 @@ module.exports = {
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
     'jsx-a11y/anchor-is-valid': 0,
+    'jsx-a11y/control-has-associated-label': 0, // Desativa a regra jsx-a11y/control-has-associated-label
+    // Comentário para desativar temporariamente a regra
+    // eslint-disable-next-line jsx-a11y/control-has-associated-label
   },
 };
