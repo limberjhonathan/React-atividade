@@ -1,0 +1,32 @@
+Se houver erro ao executar o npm start
+
+Parece que ainda há um problema de resolução de dependências com o eslint@8.2.0. O eslint-config-semistandard@17.0.0 requer o eslint na faixa ^8.13.0.
+
+Vamos tentar forçar a instalação das dependências, o que pode aceitar uma resolução incorreta das dependências, mas pode resolver o problema imediato:
+
+bash
+Copiar código
+npm install eslint@8.2.0 --save-dev --force
+ou
+
+bash
+Copiar código
+npm install eslint@8.2.0 --save-dev --legacy-peer-deps
+Após isso, remova a pasta node_modules, o arquivo package-lock.json e reinstale suas dependências:
+
+bash
+Copiar código
+rm -rf node_modules
+rm package-lock.json
+npm install
+npm start
+Essas etapas devem forçar a instalação do eslint@8.2.0 e resolver quaisquer problemas de dependências relacionadas. Certifique-se de verificar qualquer
+mensagem de aviso ou erro durante o processo de instalação para garantir que todas as dependências sejam instaladas corretamente.
+
+
+
+
+se não inicializa o react, coloque esse comando
+
+npx https://github.com/luizomf/eslint-prettier
+
