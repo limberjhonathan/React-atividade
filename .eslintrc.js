@@ -31,5 +31,6 @@ module.exports = {
     'jsx-a11y/control-has-associated-label': 0, // Desativa a regra jsx-a11y/control-has-associated-label
     // Comentário para desativar temporariamente a regra
     // eslint-disable-next-line jsx-a11y/control-has-associated-label
+    /* eslint-disable-next-line jsx-a11y/control-has-associated-label */
   },
 };
